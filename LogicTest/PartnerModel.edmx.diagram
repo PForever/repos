@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9de8a305c30e44c0b9e9885c5ba20902" Name="Diagram1">
+        <EntityTypeShape EntityType="EmployerPartnersModel.C_AppSettings" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.C_AppUsersSettings" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.C_AppUsersVersion" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.C_Settings" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.ActivityArea" Width="1.5" PointX="0.75" PointY="70" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.ActivityAreaProfessional" Width="1.5" PointX="0.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.ActivityGoal" Width="1.5" PointX="0.75" PointY="66.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Country" Width="1.5" PointX="0.75" PointY="73.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Degree" Width="1.5" PointX="3.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.DocumentType" Width="1.5" PointX="12" PointY="58.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.EPLog" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Faculty" Width="1.5" PointX="1.75" PointY="39.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.FileStorage" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_Adapter" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_Address" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_ChairmanSource" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_ExamVKR" Width="1.5" PointX="15" PointY="46.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_LP_Person" Width="1.5" PointX="11.25" PointY="78" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_MemberNPR" Width="1.5" PointX="21.75" PointY="72.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_MemberNPR_archive" Width="1.5" PointX="27" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_MemberNPR_log" Width="1.5" PointX="19.5" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_MemberPP" Width="1.5" PointX="21.75" PointY="67.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_MemberPP_archive" Width="1.5" PointX="30" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_MemberPP_log" Width="1.5" PointX="17.25" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_Number" Width="1.5" PointX="19.5" PointY="71.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_Number_archive" Width="1.5" PointX="24.75" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.GAK_Number_log" Width="1.5" PointX="17.25" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Grant" Width="1.5" PointX="5.25" PointY="59" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.HelpFile" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.License" Width="1.5" PointX="1.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.LicenseProgram" Width="1.5" PointX="4" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.NationalAffiliation" Width="1.5" PointX="0.75" PointY="77.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.ObrazProgram" Width="1.5" PointX="4" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.ObrazProgramCharacteristic" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.ObrazProgramInYear" Width="1.5" PointX="9.25" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OkvedType" Width="1.5" PointX="9" PointY="55.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrgAddress" Width="1.5" PointX="11.25" PointY="69.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Organization" Width="1.5" PointX="3" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationActivityArea" Width="1.5" PointX="11.25" PointY="66.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationActivityAreaProfessional" Width="1.5" PointX="11.25" PointY="74.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationContact" Width="1.5" PointX="5.25" PointY="80.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationDogovor" Width="1.5" PointX="14.25" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationDogovorFile" Width="1.5" PointX="16.5" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationDogovorObrazProgram" Width="1.5" PointX="16.5" PointY="86.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationEnglishSource" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationMail" Width="1.5" PointX="5.25" PointY="87.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationName" Width="1.5" PointX="5.25" PointY="90.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationOkved" Width="1.5" PointX="11.25" PointY="62" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationPerson" Width="1.5" PointX="8.25" PointY="82.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationRubric" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OrganizationSubdivision" Width="1.5" PointX="5.25" PointY="104.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.OwnershipType" Width="1.5" PointX="0.75" PointY="79.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PartnerPerson" Width="1.5" PointX="6" PointY="63.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PartnerPersonActivityArea" Width="1.5" PointX="14.25" PointY="61.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PartnerPersonOrganizationLetter" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PartnerPersonOrganizationNotAvailableInGAK" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PartnerPersonOrganizationNotAvailableInGAK_Log" Width="1.5" PointX="14.25" PointY="64.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PartnerPersonPrefix" Width="1.5" PointX="3.75" PointY="52.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PartnerPersonRubric" Width="1.5" PointX="6.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Place" Width="1.5" PointX="8.25" PointY="88.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Position" Width="1.5" PointX="6" PointY="95.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Practice" Width="1.5" PointX="8.25" PointY="93.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PracticeOrganizationRoute" Width="1.5" PointX="10.5" PointY="86.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PracticeStudentOrganizationRoute" Width="1.5" PointX="12.75" PointY="87" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.PracticeStudent" Width="1.5" PointX="10.5" PointY="90.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.ProgramType" Width="1.5" PointX="1.75" PointY="28.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Qualification" Width="1.5" PointX="1.75" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Rank" Width="1.5" PointX="3.75" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.RankHonorary_" Width="1.5" PointX="3.75" PointY="96.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.RankState" Width="1.5" PointX="3.75" PointY="108.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Region" Width="1.5" PointX="0.75" PointY="82.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Route" Width="1.5" PointX="8.25" PointY="99.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.RoutePlace" Width="1.5" PointX="10.5" PointY="95.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Rubric" Width="1.5" PointX="12" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_ALL_PERS" Width="1.5" PointX="15" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_ALL_PERS_SKUD" Width="1.5" PointX="10.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_GROUPS" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_NPR_Visible" Width="1.5" PointX="17.25" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_ORGSTRUCTURE" Width="1.5" PointX="2.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_ORGSTRUCTURE_SKUD" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_POSITIONS" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SAP_POSITIONS_SKUD" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP" Width="1.5" PointX="15" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Conference" Width="1.5" PointX="17.25" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Conference_CommonQuestions" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Conference_Questions" Width="1.5" PointX="19.5" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Conference_Questions_Files" Width="1.5" PointX="21.75" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Conference_Questions_Results" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Conference_Questions_Speeches" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_ConferenceMembers" Width="1.5" PointX="19.5" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Members" Width="1.5" PointX="17.25" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_ObrazProgram" Width="1.5" PointX="17.25" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Orders" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_OrganizationMail" Width="1.5" PointX="17.25" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_OrganizationMail_Files" Width="1.5" PointX="19.5" PointY="48.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SOP_Position" Width="1.5" PointX="15" PointY="83.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.SP_AggregateGroup" Width="1.5" PointX="4.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.StudentFromSC" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Student" Width="1.5" PointX="6.25" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.StudyLevel" Width="1.5" PointX="1.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.StudyPlanData" Width="1.5" PointX="4" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.sysdiagram" Width="1.5" PointX="6.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.Template" Width="1.5" PointX="8.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_OrderSource" Width="1.5" PointX="14.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_Themes" Width="1.5" PointX="14.25" PointY="75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_Themes_NPR" Width="1.5" PointX="16.5" PointY="90.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_Themes_OrderNums" Width="1.5" PointX="16.5" PointY="95.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_Themes_Source" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_Themes_StudyPlans" Width="1.5" PointX="16.5" PointY="98.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_ThemesStudent_Log" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_ThemesStudentCustom" Width="1.5" PointX="16.5" PointY="100.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_ThemesStudentOrder" Width="1.5" PointX="8.5" PointY="58.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_ThemesStudentOrder_Log" Width="1.5" PointX="16.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_ThemesStudentOrder_NR_Review" Width="1.5" PointX="17.25" PointY="79.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.VKR_ThemesStudentSelected" Width="1.5" PointX="18.75" PointY="91.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployerPartnersModel.RolesMember" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Organization_ActivityArea" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationActivityArea_ActivityArea" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_ActivityArea" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPersonActivityArea_ActivityArea" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Organization_ActivityAreaProfessional" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationActivityAreaProfessional_ActivityAreaProfessional" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Organization_ActivityGoal" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK__OrgAddres__Count__530F007D" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Organization_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Place_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_Degree" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_Degree2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationDogovor_DocumentType" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_ObrazProgram_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_ObrazProgramInYear_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Orders_FileStorage" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_archive_GAK_ExamVKR" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_GAK_ExamVKR" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_log_GAK_ExamVKR" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_LP_Person_LicenseProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_LP_Person_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_GAK_LP_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberNPR_GAK_Number" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberNPR_archive_GAK_Number_archive" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberNPR_log_GAK_Number_log" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberPP_GAK_Number" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberPP_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberPP_archive_GAK_Number_archive" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberPP_archive_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberPP_log_GAK_Number_log" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_MemberPP_log_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_archive_GAK_Number" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Numbers_ObrazProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_archive_ObrazProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_archive_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_log_ObrazProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_GAK_Number_log_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Grant_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_Grant" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_LicenseProgram_License" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_LicenseProgram_ProgramType" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_LicenseProgram_Qualification" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_LicenseProgram_StudyLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_ObrazProgram_LicenseProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_ObrazProgramInYear_LicenseProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Students_LicenseProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Organization_NationalAffiliation" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_ObrazProgramInYear_ObrazProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Students_ObrazProgram" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationOkved_OkvedType" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK__OrgAddres__Organ__521ADC44" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK__OrgAddres__Regio__540324B6" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Organization_OwnershipType" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Organization_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationActivityArea_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationActivityAreaProfessional_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationContacts_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationDogovor_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationMail_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationNames_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationOkved_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationPerson_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationSubdivision_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPersonNotAvailableInGAK_Log_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeOrganization_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_Themes_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_Organization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_Organization1" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_Organization2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_Organization3" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationDogovor_Rubric" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationDogovorFile_OrganizationDogovor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationDogovorObrazProgram_OrganizationDogovor" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationPerson_OrganizationSubdivision" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationPerson_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_OrganizationPerson_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeOrganizationRoute_OrganizationSubdivision" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_PartnerPersonPrefix" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_Rank" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_Rank2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_RankHonorary_" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_RankHonorary2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_RankState" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_RankState2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPerson_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPersonActivityArea_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PartnerPersonNotAvailableInGAK_Log_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Members_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_Themes_ConsultPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_Themes_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_NR_Review_PartnerPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Place_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeOrganizationRoute_Place" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_RoutePlaces_Place" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Practice_PracticeOrganization" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeStudents_Practice" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeOrganization_Route" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeStudentOrganizationRoute_PracticeOrganizationRoute" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeStudentOrganizationRoute_PracticeStudents" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_PracticeStudents_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_RoutePlaces_Route" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SAP_NPR_Visible_SAP_ALL_PERS" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Members_SAP_ALL_PERS" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_NR_Review_SAP_ALL_PERS" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Conference_SOP" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Members_SOP" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_ObrazProgram_SOP" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_OrganizationMail_SOP" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Conference_Questions_SOP_Conference" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_ConferenceMembers_SOP_Conference" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Conference_Questions_Files_SOP_Conference_Questions" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Members_SOP_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_OrganizationMail_Files_SOP_OrganizationMail" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_SOP_Position_SOP_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Students_StudyLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_Students_StudyPlanData" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentOrder_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_Themes_NPR_VKR_Themes" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_Themes_OrderNums_VKR_Themes" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_Themes_StudyPlans_VKR_Themes" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentSelected_VKR_Themes_NPR" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.FK_VKR_ThemesStudentSelected_VKR_ThemesStudentCustom" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.Consult" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.NR1" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.NR1Changed" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.NR1Changed2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.NR2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.NR2Changed" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.NR2Changed2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewNPR1" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewNPR1Changed" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewNPR2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewNPR2Changed" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewPartnerPerson1" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewPartnerPerson1Changed" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewPartnerPerson2" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployerPartnersModel.ReviewPartnerPerson2Changed" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
