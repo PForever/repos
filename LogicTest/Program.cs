@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text.RegularExpressions;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +21,12 @@ namespace LogicTest
                 new Some(0, 1, 2)
             };
 
+            var qwe = Filter.Add<Some>(l => l.Prop1 == 0, l => l.Prop2 == 1);
+            var qweC = qwe.Compile();
+            Console.WriteLine(qweC(somes[0]));
+            Console.ReadKey();
+
+
             int? q1 = 0;
             int? q2 = 1;
             int? q3 = 2;
@@ -31,7 +39,11 @@ namespace LogicTest
 
             using (var context = new EmployerPartnersEntities())
             {
-                var res = context.OrgAddresses.Where(Filter.Create<OrgAddress>(s => !s.IsDefault, true).TryAdd(s => s.Id > 3, true)).ToList();
+                var res = context.OrgAddresses.Where(Filter
+                        .Create<OrgAddress>(s => !s.IsDefault, false)
+                        .TryAdd(s => s.Id > 3, true)
+                        .TryAdd(s => s.Id < 8, true)
+                        .TryAdd(s => s.City == "wqe", false));
                 foreach (var some in res)
                 {
                     Console.WriteLine($"{some.Id}, {some.City}");
@@ -87,27 +99,44 @@ namespace LogicTest
         {
             if (!predicateResult) return mainExpression;
             if (mainExpression == null) return addbleExpression;
-            var parameters = mainExpression.Parameters.Concat(addbleExpression.Parameters).ToList();
-            var left = mainExpression.Body;
-            var right = addbleExpression.Body;
-            BinaryExpression and = Expression.And(left, right);
-            var lambdaFix = Expression.Lambda(and, parameters);
-            var t = lambdaFix.Compile();
-            int count = parameters.Count;
-            Expression<Func<T, bool>> lambda = s => (bool)t.DynamicInvoke(Enumerable.Repeat(s, count).Cast<object>().ToArray());
-            return lambda;
+            return AndAlso(mainExpression, addbleExpression);
         }
         public static Expression<Func<T, bool>> Add<T>(this Expression<Func<T, bool>> mainExpression, Expression<Func<T, bool>> addbleExpression)
         {
-            var parameters = mainExpression.Parameters.Concat(addbleExpression.Parameters).ToList();
-            var left = mainExpression.Body;
-            var right = addbleExpression.Body;
-            BinaryExpression and = Expression.And(left, right);
-            var lambdaFix = Expression.Lambda(and, parameters);
-            var t = lambdaFix.Compile();
-            int count = parameters.Count;
-            Expression<Func<T, bool>> lambda = s => (bool)t.DynamicInvoke(Enumerable.Repeat(s, count).Cast<object>().ToArray());
-            return lambda;
+            return AndAlso(mainExpression, addbleExpression);
+        }
+
+        class ParameterVisitor : ExpressionVisitor
+        {
+            private readonly ReadOnlyCollection<ParameterExpression> from, to;
+            public ParameterVisitor(
+                ReadOnlyCollection<ParameterExpression> from,
+                ReadOnlyCollection<ParameterExpression> to)
+            {
+                if (from == null) throw new ArgumentNullException("from");
+                if (to == null) throw new ArgumentNullException("to");
+                if (from.Count != to.Count) throw new InvalidOperationException(
+                    "Parameter lengths must match");
+                this.from = from;
+                this.to = to;
+            }
+            protected override Expression VisitParameter(ParameterExpression node)
+            {
+                for (int i = 0; i < from.Count; i++)
+                {
+                    if (node == from[i]) return to[i];
+                }
+                return node;
+            }
+        }
+        public static Expression<Func<T, bool>> AndAlso<T>(
+            Expression<Func<T, bool>> x, Expression<Func<T, bool>> y)
+        {
+            var newY = new ParameterVisitor(y.Parameters, x.Parameters)
+                .VisitAndConvert(y.Body, "AndAlso");
+            return Expression.Lambda<Func<T, bool>>(
+                Expression.AndAlso(x.Body, newY),
+                x.Parameters);
         }
     }
 }
