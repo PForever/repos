@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Dynamic;
 
 namespace LogicTest
 {
@@ -43,30 +44,16 @@ namespace LogicTest
                         .Create<OrgAddress>(s => !s.IsDefault, false)
                         .TryAdd(s => s.Id > 3, true)
                         .TryAdd(s => s.Id < 8, true)
-                        .TryAdd(s => s.City == "wqe", false));
+                        .TryAdd(s => s.City == "wqe", false))
+                    .Select(Filter.CreateNewStatement<OrgAddress>("Id"));
                 foreach (var some in res)
                 {
                     Console.WriteLine($"{some.Id}, {some.City}");
                 }
             }
 
-            //IQueryable<Some> query = somes.AsQueryable();
-            //var res = query.Where(Filter.Create<Some>(s => s.Prop1 == q1, q1.HasValue)
-            //    .TryAdd(s => s.Prop2 == q2, q2.HasValue)
-            //    .TryAdd(s => s.Prop3 == q3, q3.HasValue));
-
-
             Console.ReadKey();
 
-            //var y = default(LambdaExpression)
-            //    .TryAdd<Predicate<int?>>(q => q == 0, q1.HasValue)
-            //    .TryAdd<Predicate<int?>>(q => q == 1, q2.HasValue)
-            //    .TryAdd<Predicate<int?>>(q => q == 2, q3.HasValue);
-            //IQueryable<int?> query;
-            //query.Where(default(LambdaExpression)
-            //    .TryAdd<Predicate<int?>>(q => q == 0, q1.HasValue)
-            //    .TryAdd<Predicate<int?>>(q => q == 1, q2.HasValue)
-            //    .TryAdd<Predicate<int?>>(q => q == 2, q3.HasValue));
         }
     }
 
@@ -105,6 +92,11 @@ namespace LogicTest
         {
             return AndAlso(mainExpression, addbleExpression);
         }
+        //public static Expression<Func<T, dynamic>> Add<T>(this Expression<Func<T, dynamic>> mainExpression, Expression<Func<T, dynamic>> addbleExpression)
+        //{
+
+
+        //}
 
         class ParameterVisitor : ExpressionVisitor
         {
@@ -137,6 +129,36 @@ namespace LogicTest
             return Expression.Lambda<Func<T, bool>>(
                 Expression.AndAlso(x.Body, newY),
                 x.Parameters);
+        }
+
+        public static Expression<Func<T, T>> CreateNewStatement<T>(string fields)
+        {
+            // input parameter "o"
+            var xParameter = Expression.Parameter(typeof(T), "o");
+
+            // new statement "new Data()"
+            var xNew = Expression.New(typeof(T));
+
+            // create initializers
+            var bindings = fields.Split(',').Select(o => o.Trim())
+                .Select(o => {
+
+                        // property "Field1"
+                        var mi = typeof(T).GetProperty(o);
+
+                        // original value "o.Field1"
+                        var xOriginal = Expression.Property(xParameter, mi);
+
+                        // set value "Field1 = o.Field1"
+                        return Expression.Bind(mi, xOriginal);
+                    }
+                );
+
+            // initialization "new Data { Field1 = o.Field1, Field2 = o.Field2 }"
+            var xInit = Expression.MemberInit(xNew, bindings);
+
+            // expression "o => new Data { Field1 = o.Field1, Field2 = o.Field2 }"
+            return Expression.Lambda<Func<T, T>>(xInit, xParameter);
         }
     }
 }
